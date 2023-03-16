@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gideon+Roman&display=swap");
+
+@font-face{
+    font-family: 'Gothic';
+    src: url("../fonts/Gothic.ttf")
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cormorant Infant', serif;
+    font-size: 20px;
+    color: rgb(9, 31, 2);
+}
+.wrapper{
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
+main,
+footer{
+    width: 83%;
+    margin-left: 200px;
+    background-color: rgb(169, 182, 165);
+}
+main img{
+    width: 100%;
+    padding: 20px 0;
+}
+p,
+h3{
+    padding: 0 20px;
+    text-align: left;
+}
+h3{
+    text-decoration: underline;
+}
+h1,
+h2,
+h3,
+form{
+    padding: 20px 20px;
+}
+main section:nth-child(odd){
+    font-style: italic;
+    font-weight: bold;
+}
+main section:nth-child(even){
+    font-weight: bold;
+}
+.annotation,
+h1,
+h2,
+.nav{
+    font-style: normal;
+    font-family: 'Gothic', serif;
+    font-weight: normal;
+    text-align: center;
+}
+.annotation p,
+section p:nth-child(3),
+h3+p{
+    text-indent: 40px;
+}
+.annotation p span{
+    font-size: 40px;
+    color: rgb(66, 168, 75);
+}
+.nav {
+    position: fixed;
+    width: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    list-style-position: inside;
+}
+.nav li{
+    list-style-type: none;
+    padding: 10px 15px;
+}
+.backBegin{
+    padding-top: 25px;
+}
+a{
+    text-decoration: none;
+    color: rgb(9, 31, 2);
+}
+.nav li:nth-child(1){
+    border-radius: 50px 0 0 0;
+}
+.nav li:nth-child(10){
+    border-radius: 0 0 0 50px;
+}
+.nav li:nth-child(odd){
+    background-color: rgb(169, 182, 165);
+}
+.nav li:nth-child(even){
+   background-color: rgb(202, 212, 199);
+}
+li span{
+    width: 1em;
+    color:rgb(9, 31, 2);
+    font-size: 30px;
+    display: inline-block;
+    transition: 0.6s;
+}
+li:hover span{
+    color:  rgb(66,174,188);
+}
+li .marker{
+    transition: 1s;
+}
+li:hover .marker{
+    transform: rotateY(180deg);
+}
+.backBegin{
+    width: 250px;
+    padding: 25px 20px;
+    font-weight: normal;
+    text-decoration: none;
+    transition: 0.6s;
+}
+.backBegin:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+footer{
+    text-align: left;
+
+}
+input,
+textarea{
+    font-size: 16px;
+    display: block;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 15px;
+    color: rgb(9, 31, 2);
+    background-color: rgb(202, 212, 199);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+}
+input{
+    width: 250px;
+}
+textarea{
+    width: 80%;
+}
+.button{
+    font-weight: bold;
+    background-color: rgb(202, 212, 199);
+    transition: 0.6s;
+}
+.button:hover{
+    cursor: pointer;
+    background-color:rgb(169, 182, 165);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.847);
+}
