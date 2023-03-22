@@ -1,0 +1,304 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+html{
+    height: 100%;
+}
+body{
+    counter-reset: hit;
+    min-height: 100%;
+    width: 100%;
+    /* background-image: url(../img/hunter.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.firstPage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* overflow: hidden; */
+
+}
+
+.firstPage video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.score{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    z-index: 5;
+}
+.score p::after{
+    content: counter(hit);
+    margin-left: 20px;
+    z-index: 5;
+}
+.blackFon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+/* audio{
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+} */
+input[type=checkbox]{
+    position: absolute;
+    left: -100px;
+}
+input[type=checkbox]:checked{
+    counter-increment: hit;
+   
+}
+input[type=checkbox]:checked+label{
+    display: none;
+    animation-name: fall;
+    animation-duration: 15s;
+    animation-iteration-count: 3;
+}
+.duck{
+    width: 62px;
+    height: 56px;
+    position: absolute;
+    overflow: hidden;
+}
+.duck3,
+.duck1,
+.duck5{
+    left: -200px;
+}
+.duck2,
+.duck4,
+.duck6{
+    right: -200px;
+}
+.duck1,
+.duck4{
+    top: 0%;
+}
+.duck3,
+.duck6{
+    top: 50%;
+}
+.duck5,
+.duck2{
+    top: 100%;
+}
+.duck1 label,
+.duck3 label,
+.duck5 label{
+    display: inline-block;
+    background-image: url(../img/duck_hunt_bird_big2.gif);
+    width: 100%;
+    height: 100%;
+}
+.duck2 label,
+.duck4 label,
+.duck6 label{
+    display: inline-block;
+    background-image: url(../img/duck_hunt_bird_big2.gif);
+    transform: rotateY(180deg); 
+    width: 100%;
+    height: 100%;
+}
+.duck1{
+    animation-name: fly1;
+    animation-duration: 15s;
+    animation-iteration-count: 3;
+    
+}
+@keyframes fly1{
+    0%{top: 10%;
+        left: -10%;
+        }
+    25%{top: 50%;
+        left: 25%;
+        }
+    50%{top: 50%;
+        left: 50%;
+        }
+    75%{top: 15%;
+        left: 75%;
+        }
+    100%{
+        top: 60%;left: 110%;
+        }
+
+}
+ .duck2{
+    animation-name: fly2;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    animation-delay: 1s;
+}
+@keyframes fly2{
+    0%{top: 25%;
+        right: -10%;
+        }
+    25%{top: 75%;
+        right: 15%;
+        }
+    50%{
+        top: 50%;
+        right: 40%;
+        }
+    75%{top: 25%;
+        right: 70%;
+        }
+    100%{
+        top: 0%;
+        right: 110%;
+        }
+
+}
+.duck3{
+    animation-name: fly3;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+}
+@keyframes fly3{
+    0%{
+        top: 0;
+        left: -10%;
+        }
+    25%{top: 25%;
+        left: 25%;
+        }
+    50%{top: 50%;
+        left: 50%;
+        }
+    75%{top: 25%;
+        left: 75%;
+        }
+    100%{top: 0%;
+        left: 110%;
+        }
+
+}
+.duck4{
+    animation-name: fly4;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    animation-delay: 4s;
+}
+@keyframes fly4{
+    0%{top: 0;
+        right: -10%;
+        }
+    25%{
+        top: 35%;
+        right: 25%;
+        }
+    50%{top: 0%;
+        right: 50%;
+        }
+    75%{top: 55%;
+        right: 75%;
+        }
+    100%{top: 0%;
+        right: 110%;
+        }
+
+} 
+.duck5{
+    animation-name: fly5;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    animation-delay: 6s;
+}
+@keyframes fly5{
+    0%{
+        top: 30%;
+        left: -10%;}
+    25%{top: 75%;
+        left: 15%;
+        }
+    50%{top: 15%;
+        left: 40%;
+        }
+    75%{top: 50%;
+        left: 75%;
+        }
+    100%{top: 0%;
+        left: 110%;
+        }
+
+}
+.duck6{
+    animation-name: fly6;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-delay: 7s;
+}
+@keyframes fly6{
+    0%{right: -10%;
+        top: 0;}
+    25%{right: 25%;
+        top: 45%;}
+    50%{right: 50%;
+        top: 0%;}
+    75%{right: 75%;
+        top: 35%;}
+    100%{right: 110%;
+        top: 0%;}
+
+} 
+.fall{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 0;left: 50%;
+    background-image: url(../img/duck_icon_135676.png);
+    transform: rotateX(180deg);
+    /* animation-name: fall;
+    animation-duration: 2s;
+    animation-iteration-count: 1; */
+    z-index: 5;
+}
+@keyframes fall{
+    0%{top: 15%;
+    left: 50%;}
+    /* 10%{top: 25%;
+        left: 50%;}
+    25%{top: 30%;
+        left: 50%;}
+    50%{top: 55%;
+        left: 50%;}
+    75%{top: 75%;
+        left: 50%;} */
+    100%{top: 110%;
+        left: 50%;}
+    
+}
