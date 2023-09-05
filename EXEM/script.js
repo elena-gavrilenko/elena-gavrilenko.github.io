@@ -1,4 +1,4 @@
-import { ingredientsPrice, ingredients } from '../constants/ingredients.js';
+import { ingredientsPrice, ingredients } from './constants/ingredients.js';
 import { addIngredients } from './utils/rendering.js';
 import { addYourIngredients } from './utils/formation.js';
 import { percentResult } from './utils/percent.js';
