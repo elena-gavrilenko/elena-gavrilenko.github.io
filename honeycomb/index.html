@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>картон</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__about">
+          <a href="example.com" class="header__logo">
+            <img src="assets/logo.jpg" alt="logo" />
+            <span class="header__address">example.com</span>
+          </a>
+          <nav class="header__nav nav">
+            <ul class="nav__items">
+              <li class="nav__item"><a href="#">О нас</a></li>
+              <li class="nav__item"><a href="#">Оплата</a></li>
+              <li class="nav__item"><a href="#">Доставка</a></li>
+              <li class="nav__item"><a href="#">Поставщики</a></li>
+              <li class="nav__item"><a href="#">Каталог</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__contacts contacts">
+          <a class="contacts__item mail" href="mailto:email@honeycomb.com"
+            ><img
+              class="contacts__icon"
+              src="assets/mail_email.png"
+              alt="email"
+            />
+            <span>email@honeycomb.com</span></a
+          >
+          <a
+            class="contacts__item tel"
+            href="viber://chat?number=%2B136745677554"
+          >
+            <img
+              class="contacts__icon"
+              src="assets/telephone.png"
+              alt="phone"
+            />
+            <span>+13 674 567 75 54</span></a
+          >
+        </div>
+      </header>
+      <main class="main">
+        <h1 class="main__title">Сотовый картон</h1>
+        <p class="main__text">
+          Сотовый картон - это жесткий и прочный материал, состоящий, как
+          правило, из 2-х склеенных между собой слоев бумаги, между которыми
+          располагаются соты. Высота ячейки (соты) может быть от 10 мм до 100
+          мм., диаметр ячейки от 8 мм до 30 мм. Сотовый картон подлежит
+          вторичной переработке.
+        </p>
+        <div class="main__photo">
+          <img src="assets/veer-sotopaneley.jpg" alt="" />
+        </div>
+        <div class="main__price">Цена от 28 Br</div>
+        <div class="main__btns">
+          <button class="main__btn1 btn">Купить</button>
+          <button class="main__btn2 btn">Оформить кредит</button>
+        </div>
+        <div class="main__message">
+          <div class="main_screensaver btn">Отправьте нам сообщение</div>
+          <form class="main__form form">
+            <p class="form__text">
+              Если у Вас возникли вопросы, Вы можете задать их нам.
+            </p>
+            <input
+              class="form__name"
+              type="text"
+              placeholder="Введите ваше имя"
+            />
+            <input
+              class="form__email"
+              type="text"
+              placeholder="Введите ваш email"
+            />
+            <textarea
+              class="form__message"
+              type="text"
+              rows="5"
+              placeholder="Введите ваше сообщение"
+            ></textarea>
+            <button class="form__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
